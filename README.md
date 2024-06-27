@@ -34,17 +34,17 @@ This project aims to develop an advanced sentiment analysis application leveragi
     3. Docker Image: The Docker image is built and successfully running, with the container serving the end-to-end functionality of the sentiment analysis application.
 
 ## Steps to run the project in local
-1: python -m venv fastapi-env
-    Win: fastapi-env\Scripts\activate
-    Mac/Linux : source fastapi-env/bin/activate
-2: pip install -r requirements.txt
-3: To test api.py : uvicorn api:app --reload
-4: docker build -t sentiment-app .
-        to remove the container: docker rm 944ad6e81d3d
-5: docker run -it -p 8000:8000 --name sentiment-hf sentiment-app
+    1. python -m venv fastapi-env
+        Win: fastapi-env\Scripts\activate
+        Mac/Linux : source fastapi-env/bin/activate
+    2. pip install -r requirements.txt
+    3. To test api.py : uvicorn api:app --reload
+    4. docker build -t sentiment-app .
+            to remove the container: docker rm 944ad6e81d3d
+    5. docker run -it -p 8000:8000 --name sentiment-hf sentiment-app
 
 
-## Application demo screenshots
+## Application Demo Screenshots
 ![Positive Sentiment](./images/test_positive.png)
 
 ![Negative Sentiment](./images/test_negetive.png)
