@@ -4,3 +4,5 @@ tensorflow
 fastapi
 uvicorn[standard]
 tf-keras
+gradio
+requests
